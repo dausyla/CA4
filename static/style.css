@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: left;
+  margin-top: 50px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  align-items: left;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  align-items: left;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+  width: 100%;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 30px 0;
+}
+
+.todo {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.todo p {
+  margin: 0;
+}
+
+.todo form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo input[type="submit"] {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  align-items: right;
+}
+
+.todo input[type="submit"]:hover {
+  background-color: #d32f2f;
+}
+
+.todo button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.todo button[type="submit"]:hover {
+  background-color: #45a049;
+}

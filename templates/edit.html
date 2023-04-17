@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Todo</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+    <h1>Edit Todo</h1>
+    <hr>
+    <div class="content">
+        <form method="post">
+            <p>
+                <b><label for="content">Todo content</label></b>
+            </p>
+            <p>
+                <input type="text" name="content" placeholder="Todo Content" value="{{ todo['content'] }}"></input>
+            </p>
+
+            <p>
+                <b><label for="degree">Degree</label></b>
+            </p>
+            <p>
+                <label for="degree-0">Important</label>
+                <input id="degree-0" name="degree" required type="radio" value="Important" {% if
+                    todo['degree']=='Important' %} checked {% endif %}>
+            </p>
+            <p>
+                <label for="degree-1">Unimportant</label>
+                <input id="degree-1" name="degree" required type="radio" value="Unimportant" {% if
+                    todo['degree']=='Unimportant' %} checked {% endif %}>
+            </p>
+            <p>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </p>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+</body>
+
+</html>
